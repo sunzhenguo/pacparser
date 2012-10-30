@@ -30,7 +30,6 @@ namespace PacParser
 			static marshal_context^ _context;
 
 
-
 			static const char* MarshalString(String^ str)
 			{				
 				return _context->marshal_as<const char*>(str);
@@ -149,13 +148,19 @@ namespace PacParser
 			/// <param name="host"></param>
 			/// <param name="pacString"></param>
 			/// <returns></returns>
-			static String^ JustFindProxyFromString(String ^url, String ^host, String ^pacString)
+			static String^ JustFindProxyFromStringMS(String ^url, String ^host, String ^pacString)
 			{
-				const char *ansiUrl = MarshalString(url);
-				const char *ansiHost = MarshalString(host);
-				const char *ansiPath = MarshalString(pacString);
+				String^ proxy = nullptr;
 
-				return gcnew String(pacparser_just_find_proxy(ansiUrl, ansiHost, ansiPath));
+				if(InitializeMS() &&
+				   ParsePacString(pacString))
+				{
+					proxy = FindProxy(url, host);
+				}
+
+				Cleanup();
+
+				return proxy;
 			}
 
 
@@ -167,11 +172,13 @@ namespace PacParser
 			/// <param name="host"></param>
 			/// <param name="pacString"></param>
 			/// <returns></returns>
-			static String^ JustFindProxyFromStringMS(String ^url, String ^host, String ^pacString)
+			static String^ JustFindProxyFromString(String ^url, String ^host, String ^pacString)
 			{
-				EnableMicrosoftExtensions();
+				const char *ansiUrl = MarshalString(url);
+				const char *ansiHost = MarshalString(host);
+				const char *ansiPath = MarshalString(pacString);
 
-				return JustFindProxyFromString(url, host, pacString);
+				return gcnew String(pacparser_just_find_proxy(ansiUrl, ansiHost, ansiPath));
 			}
 
 
