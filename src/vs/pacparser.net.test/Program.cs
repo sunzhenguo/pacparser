@@ -9,7 +9,7 @@ namespace pacparser.net.test
     {
         static void Main(string[] args)
         {
-            var v = PacParser.PacParserVersion;
+            var v = PacParser.Version;
             Console.WriteLine(v);
             var i = PacParser.Initialize();
             Console.WriteLine(i);
