@@ -52,6 +52,9 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="pacparser.net, Version=0.0.0.0, Culture=neutral, PublicKeyToken=29f6ab6f2d8d7e97, processorArchitecture=x86">
+      <HintPath>.\pacparser.net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
@@ -80,12 +83,6 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\pacparser.net\pacparser.net.vcxproj">
-      <Project>{08E9B63F-361D-403A-A2AD-FE7BEDA67755}</Project>
-      <Name>pacparser.net</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

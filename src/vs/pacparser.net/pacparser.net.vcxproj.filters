@@ -21,10 +21,10 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="marshalledstring.cpp">
+    <ClCompile Include="pacparserdotnet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pacparser.cpp">
+    <ClCompile Include="marshalled_cstring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,7 +32,10 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="marshalledstring.h">
+    <ClInclude Include="versions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="marshalled_cstring.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

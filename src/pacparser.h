@@ -21,42 +21,44 @@
 // License along with this library; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 
-#pragma once
+#ifndef PACPARSER_H
+#define PACPARSER_H
 
 #ifdef __cplusplus
 extern "C" {
-#endif
+#endif // __cplusplus
+
 // Returns pacparser version
 // Version string is determined at the time of build. If built from a released
 // package, version corresponds to the latest release (hg) tag. If built from the
 // repository, it corresponds to the head revision of the repo.
 // returns version string if version defined, "" otherwise.
-char* pacparser_version(void);
+char* __cdecl pacparser_version(void);
 
 // Initializes pac parser
 // It initializes JavaScript engine and does few basic initializations specific
 // to pacparser.
 // returns 0 on failure and 1 on success.
-int pacparser_init(void);
+int __cdecl pacparser_init(void);
 
 // Parses the given PAC file.
 // Reads the given PAC file and evaluates it in the JavaScript context created
 // by pacparser_init.
 // returns 0 on failure and 1 on success.
-int pacparser_parse_pac_file(const char *pacfile       // PAC file to parse
+int __cdecl pacparser_parse_pac_file(const char *pacfile       // PAC file to parse
                              );
 
 // Parses the given PAC script string.
 // Evaulates the given PAC script string in the JavaScript context created
 // by pacparser_init.
 // returns 0 on failure and 1 on success.
-int pacparser_parse_pac_string(const char *string      // PAC string to parse
+int __cdecl pacparser_parse_pac_string(const char *string      // PAC string to parse
                                );
 
 // Parses pac file (deprecated, use pacparser_parse_pac_file instead)
 // Same as pacparser_parse_pac_file. Included only for backward compatibility.
 // returns 0 on failure and 1 on success.
-int pacparser_parse_pac(const char *file               // PAC file to parse
+int __cdecl pacparser_parse_pac(const char *file               // PAC file to parse
                         );
 
 // Finds proxy for the given URL and Host.
@@ -65,7 +67,7 @@ int pacparser_parse_pac(const char *file               // PAC file to parse
 // script has been parsed (using pacparser_parse_pac_file or
 // pacparser_parse_pac_string).
 // returns proxy string on sucess and NULL on error.
-char *pacparser_find_proxy(const char *url,           // URL to find proxy for
+char* __cdecl pacparser_find_proxy(const char *url,           // URL to find proxy for
                            const char *host           // Host part of the URL
                            );
 
@@ -76,27 +78,29 @@ char *pacparser_find_proxy(const char *url,           // URL to find proxy for
 // is the function to call. This function takes care of all the initialization
 // and cleanup.
 // returns proxy string on success and NULL on error.
-char *pacparser_just_find_proxy(const char *pacfile,  // PAC file
+char* __cdecl pacparser_just_find_proxy(const char *pacfile,  // PAC file
                            const char *url,           // URL to find proxy for
                            const char *host           // Host part of the URL
                            );
 
 // Destroys JavaSctipt context.
 // This function should be called once you're done with using pacparser engine.
-void pacparser_cleanup(void);
+void __cdecl pacparser_cleanup(void);
 
 // Sets my IP address.
 // Sets my IP address to a custom value. This is the IP address returned by
 // myIpAddress() javascript function.
-void pacparser_setmyip(const char *ip                 // Custom IP address.
+void __cdecl pacparser_setmyip(const char *ip                 // Custom IP address.
                        );
 
 // Enable Microsoft PAC extensions.
 // Enables a subset of Microsoft PAC extensions - dnsResolveEx, myIpAddressEx,
 // isResolvableEx. These functions are used by Google Chrome and IE to work
 // with IPv6. More info: http://code.google.com/p/pacparser/issues/detail?id=4
-void pacparser_enable_microsoft_extensions(void);
+void __cdecl pacparser_enable_microsoft_extensions(void);
 
 #ifdef __cplusplus
 }
-#endif
+#endif //__cplusplus
+
+#endif // PACPARSER_H

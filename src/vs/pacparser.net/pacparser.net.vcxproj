@@ -58,6 +58,7 @@
       <PrecompiledHeader>Create</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\Browsium\pacparser\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>pacparser.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -97,13 +98,14 @@
       </PrecompiledHeader>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
     </ClCompile>
-    <ClCompile Include="marshalledstring.cpp" />
-    <ClCompile Include="pacparser.cpp" />
+    <ClCompile Include="marshalled_cstring.cpp" />
+    <ClCompile Include="pacparserdotnet.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="marshalledstring.h" />
+    <ClInclude Include="marshalled_cstring.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="versions.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="pacparser.snk" />
