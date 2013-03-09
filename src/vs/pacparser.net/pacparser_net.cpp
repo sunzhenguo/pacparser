@@ -86,7 +86,7 @@ namespace PacParserDotNet
 
 					#ifndef NDEBUG // if this is a debug build
 					using namespace System::Diagnostics;
-					Debug::Assert(proxy == nullptr,
+					Debug::Assert(proxy != nullptr,
 								  String::Format("Parsing error!\r\nURL: {0}\r\nHOST: {1}\r\nPAC: {2}", url, host, pacTarget));
 					#endif
 				}

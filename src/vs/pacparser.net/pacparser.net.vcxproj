@@ -98,7 +98,8 @@
       <AdditionalDependencies>pacparser.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Xdcmake>
-      <AdditionalDocumentFile>pacparser_net</AdditionalDocumentFile>
+      <AdditionalDocumentFile>
+      </AdditionalDocumentFile>
     </Xdcmake>
   </ItemDefinitionGroup>
   <ItemGroup>

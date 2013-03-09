@@ -34,6 +34,8 @@ namespace pacparser.net.test
 
                     PacParser.Cleanup();
 
+                    PacParser.JustFindProxyFromString("garbage", "garbage", "garbage");
+
                     // try aggregator function
                     var res = PacParser.JustFindProxyFromFileMS("http://news.manugarg.com", "news.manugarg.com", "proxy.pac");
                     Console.WriteLine("Aggregator result: " + res);

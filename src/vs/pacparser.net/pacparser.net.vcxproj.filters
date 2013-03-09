@@ -21,10 +21,10 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pacparserdotnet.cpp">
+    <ClCompile Include="marshalled_cstring.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="marshalled_cstring.cpp">
+    <ClCompile Include="pacparser_net.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
