@@ -40,3 +40,4 @@ src/vs/_ReSharper*
 src/vs/Debug/*
 src/vs/pacparser.net.opensdf
 src/vs/pacparser.net.sdf
+docs/pacparser.net/pacparser.net.shfbproj*
