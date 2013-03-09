@@ -83,10 +83,12 @@ namespace PacParserDotNet
 				if(parseFunc(pacTarget))
 				{
 					proxy = FindProxy(url, host);
-					if(proxy == nullptr)
-					{
-						proxy = "";
-					}
+
+					#ifndef NDEBUG // if this is a debug build
+					using namespace System::Diagnostics;
+					Debug::Assert(proxy == nullptr,
+								  String::Format("Parsing error!\r\nURL: {0}\r\nHOST: {1}\r\nPAC: {2}", url, host, pacTarget));
+					#endif
 				}
 
 				Cleanup();
@@ -186,7 +188,7 @@ namespace PacParserDotNet
 
 			/// <summary>
 			/// Reads a PAC file and evaluates it in the
-			/// JavaScript context created by pacparser_init
+			/// JavaScript context created by pacparser_init.
 			/// </summary>
 			/// <param name="pacPath"></param>
 			static Boolean ParsePacFile(String ^pacPath)
@@ -199,7 +201,7 @@ namespace PacParserDotNet
 
 			/// <summary>
 			/// Reads a PAC string and evaluates it in the
-			/// JavaScript context created by pacparser_init 
+			/// JavaScript context created by pacparser_init.
 			/// </summary>
 			/// <param name="pacString"></param>
 			static Boolean ParsePacString(String ^pacString)
@@ -293,7 +295,7 @@ namespace PacParserDotNet
 			/// <param name="url"></param>
 			/// <param name="host"></param>
 			/// <param name="pacString"></param>
-			/// <returns></returns>
+			/// <returns>Proxy string on sucess and NULL on error.</returns>
 			static String^ JustFindProxyFromString(String ^url, String ^host, String ^pacString)
 			{
 				Initialize();

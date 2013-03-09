@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="Cleanup method" Url="html/M_PacParserDotNet_PacParser_Cleanup.htm" />
+  <HelpKINode Title="EnableMicrosoftExtensions method" Url="html/M_PacParserDotNet_PacParser_EnableMicrosoftExtensions.htm" />
+  <HelpKINode Title="FindProxy method" Url="html/M_PacParserDotNet_PacParser_FindProxy.htm" />
+  <HelpKINode Title="Initialize method" Url="html/M_PacParserDotNet_PacParser_Initialize.htm" />
+  <HelpKINode Title="InitializeMS method" Url="html/M_PacParserDotNet_PacParser_InitializeMS.htm" />
+  <HelpKINode Title="JustFindProxyFromFile method" Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromFile.htm" />
+  <HelpKINode Title="JustFindProxyFromFileMS method" Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromFileMS.htm" />
+  <HelpKINode Title="JustFindProxyFromString method" Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromString.htm" />
+  <HelpKINode Title="JustFindProxyFromStringMS method" Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromStringMS.htm" />
+  <HelpKINode Title="PacParser class" Url="html/AllMembers_T_PacParserDotNet_PacParser.htm" />
+  <HelpKINode Title="PacParser class" Url="html/T_PacParserDotNet_PacParser.htm" />
+  <HelpKINode Title="PacParser class">
+    <HelpKINode Title="about PacParser class" Url="html/T_PacParserDotNet_PacParser.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers_T_PacParserDotNet_PacParser.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_PacParserDotNet_PacParser.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_PacParserDotNet_PacParser.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PacParser.Cleanup method" Url="html/M_PacParserDotNet_PacParser_Cleanup.htm" />
+  <HelpKINode Title="PacParser.EnableMicrosoftExtensions method" Url="html/M_PacParserDotNet_PacParser_EnableMicrosoftExtensions.htm" />
+  <HelpKINode Title="PacParser.FindProxy method" Url="html/M_PacParserDotNet_PacParser_FindProxy.htm" />
+  <HelpKINode Title="PacParser.Initialize method" Url="html/M_PacParserDotNet_PacParser_Initialize.htm" />
+  <HelpKINode Title="PacParser.InitializeMS method" Url="html/M_PacParserDotNet_PacParser_InitializeMS.htm" />
+  <HelpKINode Title="PacParser.JustFindProxyFromFile method" Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromFile.htm" />
+  <HelpKINode Title="PacParser.JustFindProxyFromFileMS method" Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromFileMS.htm" />
+  <HelpKINode Title="PacParser.JustFindProxyFromString method" Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromString.htm" />
+  <HelpKINode Title="PacParser.JustFindProxyFromStringMS method" Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromStringMS.htm" />
+  <HelpKINode Title="PacParser.ParsePacFile method" Url="html/M_PacParserDotNet_PacParser_ParsePacFile.htm" />
+  <HelpKINode Title="PacParser.ParsePacString method" Url="html/M_PacParserDotNet_PacParser_ParsePacString.htm" />
+  <HelpKINode Title="PacParser.SetIP method" Url="html/Overload_PacParserDotNet_PacParser_SetIP.htm" />
+  <HelpKINode Title="PacParser.Version property" Url="html/P_PacParserDotNet_PacParser_Version.htm" />
+  <HelpKINode Title="PacParserDotNet namespace" Url="html/N_PacParserDotNet.htm" />
+  <HelpKINode Title="PacParserDotNet.PacParser class" Url="html/AllMembers_T_PacParserDotNet_PacParser.htm" />
+  <HelpKINode Title="PacParserDotNet.PacParser class" Url="html/T_PacParserDotNet_PacParser.htm" />
+  <HelpKINode Title="ParsePacFile method" Url="html/M_PacParserDotNet_PacParser_ParsePacFile.htm" />
+  <HelpKINode Title="ParsePacString method" Url="html/M_PacParserDotNet_PacParser_ParsePacString.htm" />
+  <HelpKINode Title="SetIP method" Url="html/Overload_PacParserDotNet_PacParser_SetIP.htm" />
+  <HelpKINode Title="Version property" Url="html/P_PacParserDotNet_PacParser_Version.htm" />
+</HelpKI>

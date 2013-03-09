@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="f180cac3-f8e1-413c-94c6-6b20252746e8" Title="PacParserDotNet Namespace" Url="html/N_PacParserDotNet.htm">
+    <HelpTOCNode Id="d23173fe-1f88-4127-b76b-74b194b366c9" Title="PacParser Class" Url="html/T_PacParserDotNet_PacParser.htm">
+      <HelpTOCNode Title="PacParser Members" Url="html/AllMembers_T_PacParserDotNet_PacParser.htm" />
+      <HelpTOCNode Id="eb0ee106-0251-474f-90ce-8bedf4e8aa36" Title="PacParser Methods" Url="html/Methods_T_PacParserDotNet_PacParser.htm">
+        <HelpTOCNode Title="Cleanup Method " Url="html/M_PacParserDotNet_PacParser_Cleanup.htm" />
+        <HelpTOCNode Title="EnableMicrosoftExtensions Method " Url="html/M_PacParserDotNet_PacParser_EnableMicrosoftExtensions.htm" />
+        <HelpTOCNode Title="FindProxy Method " Url="html/M_PacParserDotNet_PacParser_FindProxy.htm" />
+        <HelpTOCNode Title="Initialize Method " Url="html/M_PacParserDotNet_PacParser_Initialize.htm" />
+        <HelpTOCNode Title="InitializeMS Method " Url="html/M_PacParserDotNet_PacParser_InitializeMS.htm" />
+        <HelpTOCNode Title="JustFindProxyFromFile Method " Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromFile.htm" />
+        <HelpTOCNode Title="JustFindProxyFromFileMS Method " Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromFileMS.htm" />
+        <HelpTOCNode Title="JustFindProxyFromString Method " Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromString.htm" />
+        <HelpTOCNode Title="JustFindProxyFromStringMS Method " Url="html/M_PacParserDotNet_PacParser_JustFindProxyFromStringMS.htm" />
+        <HelpTOCNode Title="ParsePacFile Method " Url="html/M_PacParserDotNet_PacParser_ParsePacFile.htm" />
+        <HelpTOCNode Title="ParsePacString Method " Url="html/M_PacParserDotNet_PacParser_ParsePacString.htm" />
+        <HelpTOCNode Id="000e5bab-787e-4c97-bd59-e9233c1e232f" Title="SetIP Method " Url="html/Overload_PacParserDotNet_PacParser_SetIP.htm">
+          <HelpTOCNode Title="SetIP Method (IPAddress)" Url="html/M_PacParserDotNet_PacParser_SetIP.htm" />
+          <HelpTOCNode Title="SetIP Method (String)" Url="html/M_PacParserDotNet_PacParser_SetIP_1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="4f3aeff8-6f8b-4a5a-a525-e8d232ae6c5b" Title="PacParser Properties" Url="html/Properties_T_PacParserDotNet_PacParser.htm">
+        <HelpTOCNode Title="Version Property " Url="html/P_PacParserDotNet_PacParser_Version.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

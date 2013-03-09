@@ -34,3 +34,5 @@ src/vs/pacparser.net/*.opensdf
 src/vs/pacparser.net/pacparser.net.sdf
 src/vs/pacparser.net/*.sdf
 src/vs/pacparser.net/pacparser.net.sdf
+src/vs/pacparser.net/ipch/pacparser.net-*/*.ipch
+src/vs/pacparser.net/pacparser.net.sdf

@@ -38,16 +38,17 @@ namespace PacParserDotNet
 {
 
 	MarshalledCString::MarshalledCString(String ^str)
-		: _cString(Marshal::StringToHGlobalAnsi(str))
 		: _cString(Marshal::StringToHGlobalAnsi(str)),
 		  _disposed(false)
 	{		
 	}
 
 	
+	/// <summary>
+	/// Destructor for deterministic cleanup.
+	/// </summary>
 	MarshalledCString::~MarshalledCString()
 	{
-		this->!MarshalledCString();
 		if(!this->_disposed)
 		{
 			this->!MarshalledCString();
@@ -56,13 +57,18 @@ namespace PacParserDotNet
 	}
 
 
+	/// <summary>
+	/// Finalizer called deterministically by destructor and non-deterministically by GC.
+	/// </summary>
 	MarshalledCString::!MarshalledCString()
 	{
 		Marshal::FreeHGlobal(this->_cString);
-		this->_cString = IntPtr.Zero;
 	}
 
 
+	/// <summary>
+	/// Returns a C-style ANSI string.
+	/// </summary>
 	const char* MarshalledCString::ToAnsi()
 	{
 		return static_cast<const char*>(this->_cString.ToPointer());

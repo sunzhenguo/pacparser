@@ -1,0 +1,68 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp"><head><link rel="SHORTCUT ICON" href="./../icons/favicon.ico" /><style type="text/css">.OH_CodeSnippetContainerTabLeftActive, .OH_CodeSnippetContainerTabLeft,.OH_CodeSnippetContainerTabLeftDisabled { backgroundImageName: tabLeftBG.gif; }.OH_CodeSnippetContainerTabRightActive, .OH_CodeSnippetContainerTabRight,.OH_CodeSnippetContainerTabRightDisabled { backgroundImageName: tabRightBG.gif; }.OH_footer { backgroundImageName: footer_slice.gif; background-position: top; background-repeat: repeat-x; }</style><link rel="stylesheet" type="text/css" href="./../styles/branding.css" /><link rel="stylesheet" type="text/css" href="./../styles/branding-en-US.css" /><style type="text/css">
+			body
+			{
+			border-left:5px solid #e6e6e6;
+			overflow-x:scroll;
+			overflow-y:scroll;
+			}
+		</style><script src="./../scripts/branding.js" type="text/javascript"><!----></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>PacParser Members</title><meta name="Language" content="en-us" /><meta name="System.Keywords" content="PacParser class" /><meta name="System.Keywords" content="PacParser class, all members" /><meta name="System.Keywords" content="PacParserDotNet.PacParser class" /><meta name="Microsoft.Help.Id" content="AllMembers.T:PacParserDotNet.PacParser" /><meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="BrandingAware" content="'true'" /><meta name="container" content="PacParserDotNet" /><meta name="file" content="AllMembers_T_PacParserDotNet_PacParser" /><meta name="guid" content="AllMembers_T_PacParserDotNet_PacParser" /><meta name="SelfBranded" content="true" /></head><body onload="onLoad()" class="primary-mtps-offline-document"><div class="OH_outerDiv"><div class="OH_outerContent"><table class="TitleTable"><tr><td class="OH_tdTitleColumn">PacParser Members</td><td class="OH_tdRunningTitleColumn">pacparser.net Class Library</td></tr></table><div id="mainSection"><div id="mainBody"><span class="introStyle"></span><p></p>The <a href="T_PacParserDotNet_PacParser.htm" target="">PacParser</a> type exposes the following members.<div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Methods</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="memberList" class="members"><tr><th class="ps_iconColumn">
+							 
+						</th><th class="ps_nameColumn">Name</th><th class="ps_descriptionColumn">Description</th></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_Cleanup.htm" target="">Cleanup</a></td><td><div class="summary">
+This function should be called once you're done with using pacparser engine.
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_EnableMicrosoftExtensions.htm" target="">EnableMicrosoftExtensions</a></td><td><div class="summary">
+Enables a subset of Microsoft PAC extensions - dnsResolveEx, myIpAddressEx,
+isResolvableEx. These functions are used by Google Chrome and IE to work
+with IPv6. More info: http://code.google.com/p/pacparser/issues/detail?id=4
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_FindProxy.htm" target="">FindProxy</a></td><td><div class="summary">
+Finds proxy for the given URL and Host. This function should be called only
+after pacparser engine has been initialized (using pacparser_init) and pac
+script has been parsed (using pacparser_parse_pac_file or
+pacparser_parse_pac_string).
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_Initialize.htm" target="">Initialize</a></td><td><div class="summary">
+Initializes JavaScript engine and does few
+basic initializations specific to pacparser.
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_InitializeMS.htm" target="">InitializeMS</a></td><td><div class="summary">
+Initializes JavaScript engine, Microsoft extensions, and
+does few basic initializations specific to pacparser.
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_JustFindProxyFromFile.htm" target="">JustFindProxyFromFile</a></td><td><div class="summary">
+This function is a wrapper around functions pacparser_init,
+pacparser_parse_pac_file, pacparser_find_proxy and pacparser_cleanup. If
+you just want to find out proxy a given set of pac file, url and host, this
+is the function to call. This function takes care of all the initialization
+and cleanup.
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_JustFindProxyFromFileMS.htm" target="">JustFindProxyFromFileMS</a></td><td><div class="summary">
+This function is a wrapper around functions pacparser_enable_microsoft_extensions,
+pacparser_init, pacparser_parse_pac_file, pacparser_find_proxy and pacparser_cleanup. If
+you just want to find out proxy a given set of pac file, url and host, this is the
+function to call. This function takes care of all the initialization and cleanup.
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_JustFindProxyFromString.htm" target="">JustFindProxyFromString</a></td><td><div class="summary">
+This function is a wrapper around functions pacparser_init,
+pacparser_parse_pac_string, pacparser_find_proxy and pacparser_cleanup. If
+you just want to find out proxy a given set of pac file, url and host, this
+is the function to call. This function takes care of all the initialization
+and cleanup.
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_JustFindProxyFromStringMS.htm" target="">JustFindProxyFromStringMS</a></td><td><div class="summary">
+This function is a wrapper around functions pacparser_enable_microsoft_extensions,
+pacparser_init, pacparser_parse_pac_string, pacparser_find_proxy and pacparser_cleanup. If
+you just want to find out proxy a given set of pac file, url and host, this is the
+function to call. This function takes care of all the initialization and cleanup.
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_ParsePacFile.htm" target="">ParsePacFile</a></td><td><div class="summary">
+Reads a PAC file and evaluates it in the
+JavaScript context created by pacparser_init.
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_ParsePacString.htm" target="">ParsePacString</a></td><td><div class="summary">
+Reads a PAC string and evaluates it in the
+JavaScript context created by pacparser_init.
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_SetIP.htm" target="">SetIP(IPAddress)</a></td><td><div class="summary">
+Sets IP address to a custom value. This is the IP address returned by
+myIpAddress() javascript function.
+</div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_PacParserDotNet_PacParser_SetIP_1.htm" target="">SetIP(String)</a></td><td><div class="summary">
+Sets IP address to a custom value.  Otherwise, pacparsers uses its default logic
+to get the host's IP.  The IP address is that returned by the myIpAddress()
+javascript function.
+</div></td></tr></table><a href="#mainBody" target="">Back to Top</a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">Properties</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><table id="memberList" class="members"><tr><th class="ps_iconColumn">
+							 
+						</th><th class="ps_nameColumn">Name</th><th class="ps_descriptionColumn">Description</th></tr><tr data="public;static;declared;notNetfw;"><td><img src="./../icons/pubproperty.gif" alt="Public property" title="Public property" /><img src="./../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="P_PacParserDotNet_PacParser_Version.htm" target="">Version</a></td><td><div class="summary">
+Version string is determined at the time of build. If built from a released
+package, version corresponds to the latest release (hg) tag. If built from the
+repository, it corresponds to the head revision of the repo.
+</div></td></tr></table><a href="#mainBody" target="">Back to Top</a><a name="seeAlsoSection"><!----></a><div class="OH_CollapsibleAreaRegion"><div class="OH_regiontitle">See Also</div><div class="OH_CollapsibleArea_HrDiv"><hr class="OH_CollapsibleArea_Hr" /></div></div><div class="OH_clear"></div><div class="seeAlsoStyle"><a href="T_PacParserDotNet_PacParser.htm" target="">PacParser Class</a></div><div class="seeAlsoStyle"><a href="N_PacParserDotNet.htm" target="">PacParserDotNet Namespace</a></div></div></div></div></div><div id="OH_footer" class="OH_footer"><p /><div class="OH_feedbacklink"><a href="mailto:etmillin@gmail.com?subject=pacparser.net+Class+Library+PacParser+Members+100+EN-US&amp;body=Your%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report%2c%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed%2c%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.">Send Feedback</a> on this topic to etmillin@gmail.com.</div></div></body></html>
