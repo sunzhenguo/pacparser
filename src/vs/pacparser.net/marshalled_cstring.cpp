@@ -39,6 +39,8 @@ namespace PacParserDotNet
 
 	MarshalledCString::MarshalledCString(String ^str)
 		: _cString(Marshal::StringToHGlobalAnsi(str))
+		: _cString(Marshal::StringToHGlobalAnsi(str)),
+		  _disposed(false)
 	{		
 	}
 
@@ -46,6 +48,11 @@ namespace PacParserDotNet
 	MarshalledCString::~MarshalledCString()
 	{
 		this->!MarshalledCString();
+		if(!this->_disposed)
+		{
+			this->!MarshalledCString();
+			this->_disposed = true;
+		}
 	}
 
 

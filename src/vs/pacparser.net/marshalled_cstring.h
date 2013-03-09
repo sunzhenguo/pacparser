@@ -39,6 +39,9 @@ namespace PacParserDotNet
 			// .NET pointer for string storage
 			IntPtr _cString;
 
+			// disposed flag
+			bool _disposed;
+
 		public:
 
 			// Ctor

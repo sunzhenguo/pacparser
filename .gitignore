@@ -32,3 +32,5 @@ src/vs/pacparser.net/UpgradeLog.XML
 src/vs/pacparser.net.test/pacparser.net.test.csproj.old
 src/vs/pacparser.net/*.opensdf
 src/vs/pacparser.net/pacparser.net.sdf
+src/vs/pacparser.net/*.sdf
+src/vs/pacparser.net/pacparser.net.sdf
