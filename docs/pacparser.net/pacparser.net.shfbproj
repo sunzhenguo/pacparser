@@ -28,8 +28,9 @@
     <CleanIntermediates>True</CleanIntermediates>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\..\src\vs\pacparser.net\Debug\pacparser.net.dll" xmlns="" />
-<DocumentationSource sourceFile="..\..\src\vs\pacparser.net\Debug\pacparser.net.xml" xmlns="" /></DocumentationSources>
-    <SyntaxFilters>CSharp, VisualBasic, CPlusPlus, FSharp</SyntaxFilters>
+      <DocumentationSource sourceFile="..\..\src\vs\pacparser.net\Debug\pacparser.net.xml" xmlns="" />
+    </DocumentationSources>
+    <SyntaxFilters>CSharp, VisualBasic, CPlusPlus, FSharp, JScript</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <RootNamespaceContainer>False</RootNamespaceContainer>
     <PresentationStyle>VS2010</PresentationStyle>

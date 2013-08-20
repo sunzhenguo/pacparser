@@ -67,13 +67,14 @@ namespace PacParserDotNet
 
 			/// <summary>
 			/// This function is a wrapper around pacparser_parse_pac_string, pacparser_find_proxy
-			/// and pacparser_cleanup. If you just want to find out proxy a given set of pac file,
-			/// url and host, this is the function to call. This function takes care of all the
+			/// and pacparser_cleanup. If you just want to find a proxy from a pac file,
+			/// url, and host, this is the function to call. This function takes care of all the
 			/// initialization and cleanup.
 			/// </summary>
 			/// <param name="url"></param>
 			/// <param name="host"></param>
-			/// <param name="pacString"></param>
+			/// <param name="pacTarget"></param>
+			/// <param name="parseFunc"></param>
 			/// <returns></returns>
 			static String^ _FindProxyFromTarget(String ^url, String ^host, String ^pacTarget, ParsePacTarget ^parseFunc)
 			{
