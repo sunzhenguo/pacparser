@@ -22,6 +22,10 @@
 // License along with this library; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
 
+
+// 命令行应用程序，用户可以直接在命令行中运行这个程序
+
+
 #include <pacparser.h>
 #include <ctype.h>
 #include <stdio.h>
@@ -29,6 +33,7 @@
 #include <string.h>
 #include <unistd.h>
 
+//帮助信息
 void usage(const char *progname)
 {
   fprintf(stderr, "\nUsage:  %s <-p pacfile> <-u url> [-h host] "
@@ -50,6 +55,8 @@ void usage(const char *progname)
           "tested.\n");
   fprintf(stderr, "  -v           : print version and exit\n");
 }
+
+
 
 char *get_host_from_url(const char *url)
 {
@@ -78,11 +85,19 @@ char *get_host_from_url(const char *url)
   return host;
 }
 
+
+//入口函数
 int main(int argc, char* argv[])
 {
   char *pacfile=NULL, *url=NULL, *host=NULL, *urlslist=NULL, *client_ip=NULL;
   int enable_microsoft_extensions=0;
   signed char c;
+
+  
+  /* 
+  关于 getopt 函数 http://www.ibm.com/developerworks/cn/aix/library/au-unix-getopt.html
+  第三个参数是一个字符串，具有参数的选项（如示例中的 -l 和 -o 选项）后面跟有一个 : 字符，例如下面的例子中 p: 就表示 p这个选择有一个参数。
+  */
   while ((c = getopt(argc, argv, "evp:u:h:f:c:")) != -1)
     switch (c)
     {
@@ -90,7 +105,7 @@ int main(int argc, char* argv[])
         printf("%s\n", pacparser_version());
         return 0;
       case 'p':
-        pacfile = optarg;
+        pacfile = optarg; // optarg 是一个全局变量，在 unistd.h 中定义。
         break;
       case 'u':
         url = optarg;
@@ -120,11 +135,14 @@ int main(int argc, char* argv[])
         abort ();
     }
 
+  //如果没有指定 -p 选项
   if (!pacfile) {
     fprintf(stderr, "pactester.c: You didn't specify the PAC file\n");
     usage(argv[0]);
     return 1;
   }
+
+  //如果没有指定 -u 选项或 -urlslist 选项
   if (!url && !urlslist) {
     fprintf(stderr, "pactester.c: You didn't specify the URL\n");
     usage(argv[0]);
@@ -134,13 +152,13 @@ int main(int argc, char* argv[])
   if(enable_microsoft_extensions)
     pacparser_enable_microsoft_extensions();
 
-  // initialize pacparser
+  // 初始化 pacparser 对象
   if (!pacparser_init()) {
       fprintf(stderr, "pactester.c: Could not initialize pacparser\n");
       return 1;
   }
 
-  // Read pacfile from stdin
+  // Read pacfile from stdin， 读取 pacfile 文件
   if (strcmp("-", pacfile) == 0) {
     char *script;
     int buffsize = 4096;

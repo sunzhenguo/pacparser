@@ -520,6 +520,8 @@ pacparser_just_find_proxy(const char *pacfile,
 #define QUOTEME_(x) #x
 #define QUOTEME(x) QUOTEME_(x)
 
+
+// ³ÌÐòµÄ°æ±¾
 char* pacparser_version(void) {
 #ifndef VERSION
   print_error("WARNING: VERSION not defined.");

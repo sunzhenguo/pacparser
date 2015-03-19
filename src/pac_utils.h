@@ -26,6 +26,12 @@
 // Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,
 // USA
 
+
+// 实现了 PAC 专用的函数
+
+
+
+
 static const char *pacUtils =
 "function dnsDomainIs(host, domain) {\n"
 "    return (host.length >= domain.length &&\n"
